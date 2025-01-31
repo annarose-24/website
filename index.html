@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Rose - Botany Student & Tech Enthusiast</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body { 
+            font-family: 'Arial', sans-serif; 
+            background: linear-gradient(135deg, #e6f3ff 0%, #f0f9ff 100%);
+        }
+        .bg-pattern {
+            background-image: 
+                linear-gradient(45deg, rgba(76, 175, 80, 0.1) 25%, transparent 25%),
+                linear-gradient(-45deg, rgba(76, 175, 80, 0.1) 25%, transparent 25%);
+            background-size: 30px 30px;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-gradient-to-r from-green-400 to-blue-500 text-white p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                </svg>
+                Anna Rose
+            </h1>
+            <div>
+                <a href="#about" class="mx-2 hover:text-yellow-200">About</a>
+                <a href="#skills" class="mx-2 hover:text-yellow-200">Skills</a>
+                <a href="#interests" class="mx-2 hover:text-yellow-200">Interests</a>
+                <a href="#contact" class="mx-2 hover:text-yellow-200">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="container mx-auto px-4 py-16 text-center bg-pattern">
+        <div class="bg-white bg-opacity-80 rounded-lg p-8 shadow-xl">
+            <img src="/api/placeholder/250/250" alt="Anna Rose" class="mx-auto rounded-full mb-6 shadow-2xl border-4 border-green-400">
+            <h2 class="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-500">Hi, I'm Anna Rose</h2>
+            <p class="text-xl text-gray-600">BSc Botany Student | Tech Enthusiast | Future Innovator</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto px-4 py-16 bg-white rounded-lg shadow-md">
+        <div class="flex items-center">
+            <div class="w-1/2 pr-8">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-full text-green-500">
+                    <path fill="currentColor" d="M50 10c-22 0-40 18-40 40s18 40 40 40 40-18 40-40-18-40-40-40zm0 70c-16.5 0-30-13.5-30-30s13.5-30 30-30 30 13.5 30 30-13.5 30-30 30z"/>
+                    <circle cx="50" cy="50" r="25" fill="currentColor" opacity="0.5"/>
+                </svg>
+            </div>
+            <div class="w-1/2">
+                <h3 class="text-3xl font-bold mb-6 text-green-700">About Me</h3>
+                <p class="text-gray-700 leading-relaxed">
+                    I'm a passionate BSc Botany student with a deep love for plants, genomics, and biotechnology. Currently learning web development and exploring the intersection of biology and technology. I'm always eager to learn, build innovative products, and push the boundaries of scientific understanding.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mx-auto px-4 py-16 bg-gradient-to-br from-blue-100 to-green-100">
+        <h3 class="text-3xl font-bold mb-6 text-green-700 text-center">My Skills</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-green-500 transform hover:scale-105 transition duration-300">
+                <div class="flex items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-3 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    <h4 class="text-xl font-semibold">Leadership</h4>
+                </div>
+                <p class="text-gray-600">Experienced in leading teams and driving collaborative projects forward.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500 transform hover:scale-105 transition duration-300">
+                <div class="flex items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-3 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                    </svg>
+                    <h4 class="text-xl font-semibold">Communication</h4>
+                </div>
+                <p class="text-gray-600">Strong verbal and written communication skills across diverse contexts.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md border-l-4 border-purple-500 transform hover:scale-105 transition duration-300">
+                <div class="flex items-center mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-3 text-purple-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    <h4 class="text-xl font-semibold">Web Development</h4>
+                </div>
+                <p class="text-gray-600">Learning modern web technologies and building responsive websites.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests" class="container mx-auto px-4 py-16 bg-white rounded-lg shadow-md">
+        <h3 class="text-3xl font-bold mb-6 text-green-700 text-center">My Interests</h3>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-green-50 p-6 rounded-lg text-center transform hover:scale-105 transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2M6 11h2m15 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <h4 class="text-xl font-semibold mb-2 text-green-800">Botanical Research</h4>
+            </div>
+            <div class="bg-blue-50 p-6 rounded-lg text-center transform hover:scale-105 transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                </svg>
+                <h4 class="text-xl font-semibold mb-2 text-blue-800">Genomics</h4>
+            </div>
+            <div class="bg-purple-50 p-6 rounded-lg text-center transform hover:scale-105 transition duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto mb-4 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4.25c.165-.016.329-.025.494-.025 1.169 0 2.231.49 3 1.282A3.989 3.989 0 0112 5c.602 0 1.167.151 1.668.412a3.989 3.989 0 011.668-.412c1.172 0 2.234.49 3.005 1.282A3.989 3.989 0 0120 5v2a3.989 3.989 0 01-1.005 2.708A3.989 3.989 0 0120 12v2c0 .766-.255 1.536-.75 2.165-1.073 1.361-2.448 2.227-3.618 2.614-.772.266-1.636.403-2.532.403a6.998 6.998 0 01-3-.708 6.998 6.998 0 01-3 .708c-.896 0-1.76-.137-2.532-.403-1.17-.387-2.545-1.253-3.618-2.614C4.255 15.536 4 14.766 4 14v-2a3.989 3.989 0 011.005-2.708A3.989 3.989 0 014 7V5a3.989 3.989 0 011.668-3.212C6.44 4.58 7.5 5 8.506 5c.602 0 1.167.151 1.668.412A3.989 3.989 0 0112 5c.602 0 1.167.151 1.668.412A3.989 3.989 0 0116 4.25" />
+                </svg>
+                <h4 class="text-xl font-semibold mb-2 text-purple-800">Biotechnology</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto px-4 py
