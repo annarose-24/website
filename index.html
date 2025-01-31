@@ -1,134 +1,109 @@
 
-   
-<!DOCTYPE html>
+
+      <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anna Rose | Botany Student & Innovator</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <title>Anna Rose - Botany Student & Innovator</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        .dna-background {
+            background: linear-gradient(135deg, rgba(200,230,255,0.3) 0%, rgba(173,216,230,0.1) 100%), 
+                        repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(0,128,128,0.05) 20px, rgba(0,128,128,0.05) 40px);
         }
-        body {
-            font-family: 'Poppins', sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        .container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-            color: white;
-            text-align: center;
-            padding: 80px 0;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-        }
-        .profile-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid white;
-        }
-        section {
-            background: white;
-            margin: 20px 0;
-            padding: 40px 0;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .skills, .projects {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .skill-card, .project-card {
-            background: #f1f1f1;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            width: 250px;
-            transition: transform 0.3s;
-        }
-        .skill-card:hover, .project-card:hover {
-            transform: scale(1.05);
-        }
-        footer {
-            background-color: #2575fc;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-            .skill-card, .project-card {
-                width: 100%;
-            }
+        .flower-accent {
+            position: absolute;
+            opacity: 0.2;
+            z-index: -1;
         }
     </style>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <img src="/api/placeholder/200/200" alt="Anna Rose" class="profile-image">
-            <h1>Anna Rose</h1>
-            <p>BSc Botany Student | Plant Enthusiast | Innovator</p>
+<body class="bg-white text-gray-800 dna-background font-sans">
+    <!-- Header Section -->
+    <header class="relative container mx-auto px-4 py-12 text-center">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
+            <svg class="flower-accent" width="200" height="200" viewBox="0 0 100 100">
+                <path d="M50 50 L30 20 Q50 10, 70 20 Z" fill="#FF69B4" />
+                <path d="M50 50 L20 30 Q10 50, 20 70 Z" fill="#87CEEB" />
+                <path d="M50 50 L70 30 Q90 50, 70 70 Z" fill="#98FB98" />
+            </svg>
         </div>
+        <h1 class="text-4xl font-bold mb-4">Anna Rose</h1>
+        <p class="text-xl text-gray-600">BSc Botany Student | Innovator | Genomics Enthusiast</p>
     </header>
 
-    <section id="about" class="container">
-        <h2>About Me</h2>
-        <p>Hi! I'm Anna, a passionate Botany student with a keen interest in genomics, biotechnology, and product development. I love exploring the fascinating world of plants and am always eager to learn something new every day.</p>
+    <!-- About Section -->
+    <section class="container mx-auto px-4 py-12 grid md:grid-cols-2 gap-8">
+        <div>
+            <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+            <p class="text-lg">
+                A passionate botany student with a deep love for plants, biotechnology, and product development. 
+                I'm constantly learning and exploring the intersection of science and innovation.
+            </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h3 class="text-2xl font-semibold mb-4">Key Skills</h3>
+            <ul class="space-y-2">
+                <li>• Leadership</li>
+                <li>• Communication</li>
+                <li>• Web Development</li>
+                <li>• Genomics</li>
+            </ul>
+        </div>
     </section>
 
-    <section id="skills" class="container">
-        <h2>Skills</h2>
-        <div class="skills">
-            <div class="skill-card">
-                <h3>Leadership</h3>
-                <p>Proven ability to lead and inspire teams</p>
+    <!-- Interests Section -->
+    <section class="container mx-auto px-4 py-12 bg-gray-50">
+        <h2 class="text-3xl font-semibold text-center mb-8">My Passions</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <h3 class="text-xl font-semibold mb-4">Plants</h3>
+                <p>Exploring the fascinating world of botanical science</p>
             </div>
-            <div class="skill-card">
-                <h3>Communication</h3>
-                <p>Effective verbal and written communication</p>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <h3 class="text-xl font-semibold mb-4">Biotechnology</h3>
+                <p>Innovating at the cutting edge of biological research</p>
             </div>
-            <div class="skill-card">
-                <h3>Web Development</h3>
-                <p>Learning and developing web skills</p>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <h3 class="text-xl font-semibold mb-4">Learning</h3>
+                <p>Committed to continuous personal and professional growth</p>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="container">
-        <h2>Projects & Hackathons</h2>
-        <div class="projects">
-            <div class="project-card">
-                <h3>Tinkerhub Hackathon</h3>
-                <p>Participant in innovative tech challenge</p>
+    <!-- DNA Strand Background Section -->
+    <section class="container mx-auto px-4 py-12 relative">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
+            <svg width="100%" height="200" viewBox="0 0 1000 200" class="opacity-10">
+                <path d="M0 100 Q250 50, 500 100 T1000 100" stroke="#4169E1" fill="none" stroke-width="2"/>
+                <path d="M0 110 Q250 60, 500 110 T1000 110" stroke="#32CD32" fill="none" stroke-width="2"/>
+            </svg>
+        </div>
+        <div class="relative z-10">
+            <h2 class="text-3xl font-semibold text-center mb-8">Current Journey</h2>
+            <div class="text-center">
+                <p class="text-lg">
+                    Currently participating in Tinker Her Hack, a hackathon organized by TinkerHub, 
+                    expanding my skills in technology and innovation.
+                </p>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>Contact: bobyannarose@gamil.com</p>
-            <p>© 2025 Anna Rose. All Rights Reserved.</p>
+    <!-- Contact Section -->
+    <section class="container mx-auto px-4 py-12 bg-gray-100">
+        <h2 class="text-3xl font-semibold text-center mb-8">Get In Touch</h2>
+        <div class="max-w-md mx-auto bg-white p-8 rounded-lg shadow-md">
+            <p class="text-center text-lg">
+                📧 Email: <a href="mailto:bobyannarose@gamil.com" class="text-blue-600 hover:underline">bobyannarose@gamil.com</a>
+            </p>
         </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 text-center">
+        <p>© 2025 Anna Rose. All rights reserved.</p>
     </footer>
 </body>
 </html>
